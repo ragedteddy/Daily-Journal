@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-nikhil2:mongonikhil2@cluster0.vnuzq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.vnuzq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
 
 const postsSchema = {
     index: Number,
